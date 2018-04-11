@@ -1,0 +1,297 @@
+{
+	"id": "729f5944-2c7b-d03d-4234-df03ca54b439",
+	"name": "TODO app",
+	"description": "APIs of skoolchale",
+	"order": [
+		"5f3e132a-d5ec-4c30-a540-4fb055f767b5",
+		"1b7bfeca-10b4-52d1-faf0-c6405fcf8fb3",
+		"2ef31cf1-805f-b34f-4315-4c996109aea2",
+		"c337d771-b871-9290-51dd-66e25b4cdc70",
+		"76a5ed9f-6d28-b2fa-4e89-6507f9f28d6c",
+		"d01e9c96-8794-8842-fccd-17904f7a44e8",
+		"36532716-aef8-bf0b-2847-9f66f40f2f68"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1523462336600,
+	"owner": "3977379",
+	"public": false,
+	"requests": [
+		{
+			"id": "1b7bfeca-10b4-52d1-faf0-c6405fcf8fb3",
+			"headers": "Content-Type: application/json\nAccept: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host}}/login",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1523467207440,
+			"name": "login",
+			"description": null,
+			"collectionId": "729f5944-2c7b-d03d-4234-df03ca54b439",
+			"rawModeData": "{\n  \"email\": \"sagar7200@gmail.com\",\n  \"password\": \"sagar7200\"\n}"
+		},
+		{
+			"id": "2ef31cf1-805f-b34f-4315-4c996109aea2",
+			"headers": "Content-Type: application/json\nAccept: application/json\n//Authorization: JWT {{token}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "JWT {{token}}",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "{{host}}/logout",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1523462311889,
+			"name": "logout",
+			"description": null,
+			"collectionId": "729f5944-2c7b-d03d-4234-df03ca54b439",
+			"collection_id": "729f5944-2c7b-d03d-4234-df03ca54b439",
+			"rawModeData": ""
+		},
+		{
+			"id": "36532716-aef8-bf0b-2847-9f66f40f2f68",
+			"headers": "Content-Type: application/json\nAccept: application/json\nAuthorization: bearer {{token}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "bearer {{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host}}/todo/1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1523471468239,
+			"name": "delete todo",
+			"description": null,
+			"collectionId": "729f5944-2c7b-d03d-4234-df03ca54b439",
+			"rawModeData": ""
+		},
+		{
+			"id": "5f3e132a-d5ec-4c30-a540-4fb055f767b5",
+			"headers": "Content-Type: application/json\nAccept: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"url": "{{host}}/signup",
+			"folder": null,
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": null,
+			"helperAttributes": null,
+			"time": 1523462840910,
+			"name": "sign up",
+			"description": null,
+			"collectionId": "729f5944-2c7b-d03d-4234-df03ca54b439",
+			"isFromCollection": true,
+			"collectionRequestId": "5f3e132a-d5ec-4c30-a540-4fb055f767b5",
+			"auth": null,
+			"events": null,
+			"descriptionFormat": null,
+			"variables": null,
+			"rawModeData": "{\n  \"firstname\": \"Sagar\",\n  \"lastname\": \"Makwana\",\n  \"email\": \"sagar7200@gmail.com\",\n  \"password\": \"sagar7200\"\n}"
+		},
+		{
+			"id": "76a5ed9f-6d28-b2fa-4e89-6507f9f28d6c",
+			"headers": "Content-Type: application/json\nAccept: application/json\nAuthorization: bearer {{token}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "bearer {{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host}}/todo",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1523470940593,
+			"name": "create todo",
+			"description": null,
+			"collectionId": "729f5944-2c7b-d03d-4234-df03ca54b439",
+			"rawModeData": "{\n  \"title\": \"This is test todo\"\n}"
+		},
+		{
+			"id": "c337d771-b871-9290-51dd-66e25b4cdc70",
+			"headers": "Content-Type: application/json\nAccept: application/json\nAuthorization: bearer {{token}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "bearer {{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host}}/todo",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1523470536794,
+			"name": "get my all todo",
+			"description": null,
+			"collectionId": "729f5944-2c7b-d03d-4234-df03ca54b439",
+			"rawModeData": ""
+		},
+		{
+			"id": "d01e9c96-8794-8842-fccd-17904f7a44e8",
+			"headers": "Content-Type: application/json\nAccept: application/json\nAuthorization: bearer {{token}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "bearer {{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host}}/todo/1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1523471352494,
+			"name": "update todo",
+			"description": null,
+			"collectionId": "729f5944-2c7b-d03d-4234-df03ca54b439",
+			"rawModeData": "{\n  \"title\": \"This is test todo\",\n  \"status\": \"done\"\n}"
+		}
+	]
+}
